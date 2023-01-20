@@ -1,6 +1,7 @@
-import { Link, Route } from "wouter";
+import { Route } from "wouter";
 import './App.css';
-import ListOfGifs from './components/ListOfGifs';
+import Home from "./pages/Home/Home";
+import SearchResults from "./pages/SearchResults/SearchResults";
 
 function App() {
   
@@ -8,14 +9,13 @@ function App() {
     <div className="App">
       <section className="App-content">
       <h1>Giffy</h1>
-      <Link to='/gif/kiriko'>Gifs de Kiriko</Link>
-      <Link to='/gif/Dva'>Gifs de Dva</Link>
-      <Link to='/gif/widowmaker'>Gifs de Widowmaker</Link>
-      <Link to='/gif/mccree'>Gifs de Cassidy</Link>
-
         <Route 
-          component={ListOfGifs}
-          path="/gif/:keyword" 
+          component={Home}
+          path="/" 
+        />
+        <Route 
+          component={SearchResults}
+          path="/search/:keyword" 
         />
       </section>
     </div>

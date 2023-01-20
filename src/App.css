@@ -15,7 +15,13 @@
   padding: 16px;
 }
 
+li {
+  list-style-type: none;
+  text-align: start;
+}
+
 a {
-  color: #09f;
+  color: pink;
   font-size: 32px;
+  text-decoration: none;
 }

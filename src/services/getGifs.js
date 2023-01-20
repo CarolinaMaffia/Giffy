@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const apiKey = 'z8dIocQwdWmy4LYUN53Nt2WOseB994Iu&q';
 
 export default function getGifs ({ keyword = 'overwatch' } = {}) {
